@@ -1,0 +1,7 @@
+#允许跨域
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+    [headers.values]
+      Access-Control-Allow-Origin = "*"
+      Cache-Control = "public, max-age=86400"
